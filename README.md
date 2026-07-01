@@ -56,26 +56,8 @@ Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Compo
 
 ---
 
-## 📁 Files
 
-```
-📦 face-anonymizer
- └── main.py   → Single-file script: capture → detect → blur → display
-```
 
----
-
-## 🛠️ Requirements
-
-```
-opencv-python
-```
-
-Install with:
-
-```bash
-pip install opencv-python
-```
 
 ---
 
@@ -91,13 +73,6 @@ python main.py
 
 ---
 
-## 📌 Potential Improvements
-
-- [ ] Tune `scaleFactor` to `1.1`–`1.3` for better detection
-- [ ] Replace box blur with Gaussian blur for a more natural effect
-- [ ] Add support for video file input (not just webcam)
-- [ ] Export anonymized video to file
-- [ ] Try a DNN-based face detector for higher accuracy
 
 ---
 
