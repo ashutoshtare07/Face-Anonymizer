@@ -1,16 +1,16 @@
-# 🎭 Real-Time Face Anonymization with OpenCV
+#  Real-Time Face Anonymization with OpenCV
 
 A Python-based real-time face anonymization system that uses your webcam to automatically detect and blur human faces using Haar Cascade classification — preserving privacy in live video feeds.
 
 ---
 
-## 📸 Demo
+##  Demo
 
 > Point your camera at a face → the face region is blurred instantly in the live window.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Composite → Display
@@ -33,7 +33,7 @@ Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Compo
 
 ---
 
-## 🧠 Why Haar Cascades?
+##  Why Haar Cascades?
 
 - Pre-trained on thousands of positive/negative face images — no custom training needed
 - Grayscale processing reduces computational load vs. full color frames
@@ -42,7 +42,7 @@ Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Compo
 
 ---
 
-## 🔍 Detection & Blur Pipeline
+##  Detection & Blur Pipeline
 
 | Step | Operation | Detail |
 |------|-----------|--------|
@@ -52,7 +52,7 @@ Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Compo
 | Blur | `cv2.blur` | Box blur with `15×15` kernel |
 | Compositing | Direct array assignment | Blurred slice written back in-place |
 
-> ⚠️ **Tip:** The current `scaleFactor=5.5` is aggressive and may miss faces. Values between `1.1`–`1.3` give much better detection accuracy.
+>  **Tip:** The current `scaleFactor=5.5` is aggressive and may miss faces. Values between `1.1`–`1.3` give much better detection accuracy.
 
 ---
 
@@ -61,7 +61,7 @@ Webcam Feed → Grayscale Conversion → Haar Cascade Detection → Blur & Compo
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ```bash
 python main.py
